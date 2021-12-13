@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1037.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-2.0" prefHeight="576.0" prefWidth="231.0" style="-fx-background-color: #001011;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/user.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="CName" text="Fizza Rubab" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnAddfood" alignment="CENTER" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#addFood" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Add Food Stock" />
+            <Button fx:id="btnSignout" alignment="CENTER" graphicTextGap="22.0" mnemonicParsing="false" onAction="#signOut" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Signout" />
+         </children>
+      </VBox>
+      <Pane fx:id="pnlOverview" layoutX="231.0" prefHeight="576.0" prefWidth="807.0">
+         <children>
+            <Line endX="14.063232421875" endY="-4.899993896484375" layoutX="161.0" layoutY="371.0" startX="14.063232421875" startY="-176.89999389648438" stroke="#7b7b7b" />
+            <Label fx:id="RName" layoutX="25.0" layoutY="224.0" prefHeight="190.0" prefWidth="146.0" text="Pizza Hut" textFill="#e0e0ef" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="RAddress" alignment="TOP_LEFT" layoutX="25.0" layoutY="382.0" prefHeight="86.0" prefWidth="146.0" text="Phase V, DHA" textFill="#e0e0ef" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="RImg" fitHeight="86.0" fitWidth="163.0" layoutX="14.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/image-removebg-preview%20(2).png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="190.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="590.0">
+               <children>
+                  <AnchorPane fx:id="FCard1" layoutX="6.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="532.0" style="-fx-background-color: #e0e0ef; -fx-background-radius: 5;">
+                     <children>
+                        <Text fx:id="FName1" fill="#02030a" layoutX="13.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasty Jalapeno Pizza" wrappingWidth="244.0000366210936">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Fprice1" fill="#02030a" layoutX="17.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: Rs 1700" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="img1" fitHeight="79.0" fitWidth="106.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/pizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Fdesc1" fill="#02030a" layoutX="16.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="350.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="delete1" fitHeight="18.0" fitWidth="20.0" layoutX="458.0" layoutY="31.0" onMouseClicked="#handleDelete" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/trash.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="edit1" fitHeight="18.0" fitWidth="20.0" layoutX="500.0" layoutY="28.0" onMouseClicked="#addFood" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="q1" fill="#02030a" layoutX="406.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="36.800024414062364">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="FCard2" layoutX="6.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="532.0" style="-fx-background-color: #e0e0ef; -fx-background-radius: 5;">
+                     <children>
+                        <Text fx:id="FName2" fill="#02030a" layoutX="13.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasty Jalapeno Pizza" wrappingWidth="244.0000366210936">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Fprice2" fill="#02030a" layoutX="13.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: Rs 1700" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="img2" fitHeight="79.0" fitWidth="105.0" layoutX="257.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/pizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Fdesc2" fill="#02030a" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="244.0000366210935">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="delete2" fitHeight="18.0" fitWidth="20.0" layoutX="458.0" layoutY="30.0" onMouseClicked="#handleDelete" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/trash.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="edit2" fitHeight="18.0" fitWidth="20.0" layoutX="500.0" layoutY="30.0" onMouseClicked="#addFood" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="q2" fill="#02030a" layoutX="402.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="36.800024414062364">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="FCard3" layoutX="6.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="532.0" style="-fx-background-color: #e0e0ef; -fx-background-radius: 5;">
+                     <children>
+                        <Text fx:id="FName3" fill="#02030a" layoutX="13.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasty Jalapeno Pizza" wrappingWidth="244.0000366210936">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Fprice3" fill="#02030a" layoutX="13.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: Rs 1700" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="img3" fitHeight="79.0" fitWidth="105.0" layoutX="257.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/pizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Fdesc3" fill="#02030a" layoutX="15.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="delete3" fitHeight="18.0" fitWidth="20.0" layoutX="456.0" layoutY="33.0" onMouseClicked="#handleDelete" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/trash.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="edit3" fitHeight="18.0" fitWidth="20.0" layoutX="502.0" layoutY="30.0" onMouseClicked="#addFood" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="q3" fill="#02030a" layoutX="403.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="36.800024414062364">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="FCard4" layoutX="6.0" layoutY="330.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="532.0" style="-fx-background-color: #e0e0ef; -fx-background-radius: 5;">
+                     <children>
+                        <Text fx:id="FName4" fill="#02030a" layoutX="13.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasty Jalapeno Pizza" wrappingWidth="244.0000366210936">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Fprice4" fill="#02030a" layoutX="13.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: Rs 1700" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="img4" fitHeight="79.0" fitWidth="105.0" layoutX="257.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/pizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Fdesc4" fill="#02030a" layoutX="13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="delete4" fitHeight="18.0" fitWidth="20.0" layoutX="457.0" layoutY="31.0" onMouseClicked="#handleDelete" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/trash.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="edit4" fitHeight="18.0" fitWidth="20.0" layoutX="498.0" layoutY="30.0" onMouseClicked="#addFood" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="q4" fill="#02030a" layoutX="400.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="36.800024414062364">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="FCard5" layoutX="6.0" layoutY="435.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="532.0" style="-fx-background-color: #e0e0ef; -fx-background-radius: 5;">
+                     <children>
+                        <Text fx:id="FName5" fill="#02030a" layoutX="13.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasty Jalapeno Pizza" wrappingWidth="244.0000366210936">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="Fprice5" fill="#02030a" layoutX="13.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: Rs 1700" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="img5" fitHeight="79.0" fitWidth="105.0" layoutX="257.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/pizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="Fdesc5" fill="#02030a" layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="470.39999999999986">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="delete5" fitHeight="18.0" fitWidth="20.0" layoutX="457.0" layoutY="32.0" onMouseClicked="#handleDelete" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/trash.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="edit5" fitHeight="18.0" fitWidth="20.0" layoutX="498.0" layoutY="30.0" onMouseClicked="#addFood" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="q5" fill="#02030a" layoutX="403.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="36.800024414062364">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="goBack" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="740.0" layoutY="355.0" mnemonicParsing="false" onAction="#goBackClick" prefHeight="79.0" prefWidth="50.0" style="-fx-background-color: #e0e0ef;" text="↑" textAlignment="CENTER" textFill="#02030a" textOverrun="CLIP">
+               <font>
+                  <Font name="Segoe UI Symbol" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="goFront" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="740.0" layoutY="460.0" mnemonicParsing="false" onAction="#goFrontClick" prefHeight="79.0" prefWidth="50.0" style="-fx-background-color: #e0e0ef;" text="↓" textAlignment="CENTER" textFill="#02030a" textOverrun="CLIP">
+               <font>
+                  <Font name="Segoe UI Symbol" size="28.0" />
+               </font>
+            </Button>
+            <Line endX="-155.0" endY="-96.0" layoutX="156.0" layoutY="95.0" startX="-155.0" startY="481.69293212890625" stroke="#7b7b7b" strokeWidth="3.0" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>
